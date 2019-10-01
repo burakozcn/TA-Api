@@ -2,7 +2,7 @@
 //  FlightSchedule+CoreDataProperties.h
 //  TAApiC
 //
-//  Created by Burak Özcan on 16.09.2019.
+//  Created by Burak Özcan on 1.10.2019.
 //  Copyright © 2019 Burak Özcan. All rights reserved.
 //
 //
@@ -16,13 +16,13 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (NSFetchRequest<FlightSchedule *> *)fetchRequest;
 
+@property (nullable, nonatomic, copy) NSString *airline;
 @property (nullable, nonatomic, copy) NSString *arrivalDest;
+@property (nullable, nonatomic, copy) NSString *arrivalTime;
 @property (nullable, nonatomic, copy) NSString *departDest;
+@property (nullable, nonatomic, copy) NSString *departTime;
 @property (nullable, nonatomic, copy) NSString *duration;
 @property (nullable, nonatomic, copy) NSString *flightNumber;
-@property (nullable, nonatomic, copy) NSString *airline;
-@property (nullable, nonatomic, copy) NSDate *arrivalTime;
-@property (nullable, nonatomic, copy) NSDate *departTime;
 
 @end
 

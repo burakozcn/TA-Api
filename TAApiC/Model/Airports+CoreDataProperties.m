@@ -2,7 +2,7 @@
 //  Airports+CoreDataProperties.m
 //  TAApiC
 //
-//  Created by Burak Özcan on 16.09.2019.
+//  Created by Burak Özcan on 1.10.2019.
 //  Copyright © 2019 Burak Özcan. All rights reserved.
 //
 //
