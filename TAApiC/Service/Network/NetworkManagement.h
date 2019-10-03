@@ -1,11 +1,12 @@
 #import <Foundation/Foundation.h>
-#import "Helper.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface NetworkManagement : NSObject
 
-+ (void) postResults;
+@property (nonatomic, copy) void (^completion)(NSDictionary* resultDict);
+
+- (void) postResults: (NSDictionary *) dict completion: (void (^) (NSDictionary* value)) completion;
 
 @end
 

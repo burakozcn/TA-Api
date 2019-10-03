@@ -7,20 +7,23 @@
 @synthesize persistentContainer = _persistentContainer;
 
 - (NSPersistentContainer *)persistentContainer {
-  // The persistent container for the application. This implementation creates and returns a container, having loaded the store for the application to it.
   @synchronized (self) {
     if (_persistentContainer == nil) {
       _persistentContainer = [[NSPersistentContainer alloc] initWithName:@"TAApiC"];
+      
       [_persistentContainer loadPersistentStoresWithCompletionHandler:^(NSPersistentStoreDescription *storeDescription, NSError *error) {
+        NSURL *persistentStoreURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain: NSUserDomainMask appropriateForURL:NULL create:true error:&error];
+        storeDescription = [NSPersistentStoreDescription persistentStoreDescriptionWithURL:persistentStoreURL];
+        storeDescription.type = NSSQLiteStoreType;
+        storeDescription.shouldMigrateStoreAutomatically = true;
+        storeDescription.shouldInferMappingModelAutomatically = false;
         if (error != nil) {
-
           NSLog(@"Unresolved error %@, %@", error, error.userInfo);
           abort();
         }
       }];
     }
   }
-  
   return _persistentContainer;
 }
 
@@ -34,6 +37,5 @@
     abort();
   }
 }
-
 
 @end

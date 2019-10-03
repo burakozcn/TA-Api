@@ -1,11 +1,3 @@
-//
-//  NoFlightViewController.m
-//  TAApiC
-//
-//  Created by Burak Özcan on 29.09.2019.
-//  Copyright © 2019 Burak Özcan. All rights reserved.
-//
-
 #import "NoFlightViewController.h"
 
 @interface NoFlightViewController ()
@@ -15,18 +7,19 @@
 @implementation NoFlightViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  [super viewDidLoad];
+  self.view.backgroundColor = UIColor.whiteColor;
+  [self showAlert];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void) showAlert {
+  UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Alert" message:@"There is no flight for this destinations on these dates!" preferredStyle:UIAlertControllerStyleActionSheet];
+  UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UINavigationController *navVC = (UINavigationController *)UIApplication.sharedApplication.keyWindow.rootViewController;
+    [navVC popToRootViewControllerAnimated:YES];
+  }];
+  [alert addAction:action];
+  [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
 }
-*/
 
 @end

@@ -1,16 +1,15 @@
-//
-//  SaveTableViewController.h
-//  TAApiC
-//
-//  Created by Burak Özcan on 1.10.2019.
-//  Copyright © 2019 Burak Özcan. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "SaveTableViewCell.h"
+#import "SaveViewModel.h"
+#import "DetailViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface SaveTableViewController : UITableViewController
+
+@property (nonatomic,strong) DetailViewController *detailVC;
+@property (nonatomic, strong) SaveViewModel *viewModel;
+@property (nonatomic, strong) NSArray<FlightSchedule *> *flightArray;
 
 @end
 

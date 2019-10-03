@@ -4,7 +4,7 @@
 
 NSError *error = nil;
 
-+ (void) postResults {
+- (void) postResults: (NSDictionary *) dict completion: (void (^) (NSDictionary* value)) completion  {
   NSURLSessionConfiguration *conf = [NSURLSessionConfiguration defaultSessionConfiguration];
   NSURLSession *session = [NSURLSession sessionWithConfiguration:conf];
   NSURL *url = [NSURL URLWithString:@"https://api.turkishairlines.com/test/getTimeTable"];
@@ -15,16 +15,15 @@ NSError *error = nil;
   [request addValue:@"l7xx5d845144e71746bfa6e34f6ca7bc7bb5" forHTTPHeaderField:@"apikey"];
   [request setHTTPMethod:@"POST"];
   
-  NSDictionary *dict = [Helper getDict];
-  
   NSData *postData = [NSJSONSerialization dataWithJSONObject:dict options:NSJSONWritingPrettyPrinted error:NULL];
   [request setHTTPBody:postData];
   
   NSURLSessionDataTask *dataTask = [session dataTaskWithRequest:request completionHandler:^(NSData *data, NSURLResponse *response, NSError *error) {
     
     NSDictionary *responseDict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingAllowFragments error:nil];
-    NSArray *array = [Helper resolveDict:responseDict];
-    
+    dispatch_async(dispatch_get_main_queue(), ^{
+      completion(responseDict);
+    });
   }];
   
   [dataTask resume];

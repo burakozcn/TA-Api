@@ -51,4 +51,20 @@
   return _sectionArray[section];
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+  UINavigationController *navVC = (UINavigationController *) UIApplication.sharedApplication.keyWindow.rootViewController;
+  NSString *key = _sectionArray[indexPath.section];
+  NSDictionary *_dict = _dataDict[key][indexPath.row][@"FlightSegment"];
+  NSDictionary *dict = @{ @"DepartDest" : _dict[@"DepartureAirport"][@"LocationCode"],
+                          @"DepartTime" : _dict[@"DepartureDateTime"],
+                          @"ArrivalDest" : _dict[@"ArrivalAirport"][@"LocationCode"],
+                          @"ArrivalTime" : _dict[@"ArrivalDateTime"],
+                          @"Duration" : _dict[@"JourneyDuration"],
+                          @"Airline" : _dict[@"OperatingAirline"][@"Value"],
+                          @"FlightNumber" : _dict[@"FlightNumber"]
+  };
+  _detailVC = [[DetailViewController alloc] initWithDict:dict button:true];
+  [navVC pushViewController:_detailVC animated:YES];
+}
+
 @end

@@ -1,16 +1,13 @@
-//
-//  DeleteViewController.h
-//  TAApiC
-//
-//  Created by Burak Özcan on 1.10.2019.
-//  Copyright © 2019 Burak Özcan. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DeleteViewController : UIViewController
+
+@property (strong, nonatomic) NSString *alertTitle;
+@property (strong, nonatomic) NSString *alertMessage;
+
+-(id) initWithAlertTitle:(NSString *) title message:(NSString *) message;
 
 @end
 

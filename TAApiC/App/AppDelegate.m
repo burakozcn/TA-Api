@@ -8,6 +8,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+  _persistence = [[Persistence alloc] init];
   UIViewController *vc = [MainViewController new];
   UINavigationController *navVC = [[UINavigationController alloc] initWithRootViewController:vc];
   _window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
@@ -18,8 +19,7 @@
 
 - (void)applicationWillTerminate:(UIApplication *)application {
   
-  Persistence *persistence = [Persistence new];
-  [persistence saveContext];
+  [_persistence saveContext];
 }
 
 @end

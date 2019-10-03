@@ -53,7 +53,7 @@
                 <outlet property="departDest" destination="lFB-VZ-Q5r" id="Lbr-Al-yxy"/>
                 <outlet property="departTime" destination="c7q-HU-NFa" id="7h9-Om-q7f"/>
             </connections>
-            <point key="canvasLocation" x="-210.1449275362319" y="373.66071428571428"/>
+            <point key="canvasLocation" x="-48" y="-41"/>
         </tableViewCell>
     </objects>
 </document>

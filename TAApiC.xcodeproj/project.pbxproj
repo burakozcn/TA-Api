@@ -8,20 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		8C096782232136E900958A56 /* DeptTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C096781232136E900958A56 /* DeptTableViewController.m */; };
-		8C096785232136F600958A56 /* ArrivalTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C096784232136F600958A56 /* ArrivalTableViewController.m */; };
-		8C43FCFD2317C98D00A46DBA /* Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C43FCFC2317C98D00A46DBA /* Helper.m */; };
-		8C5ACE08231E616A00F15182 /* FlightSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C5ACE07231E616A00F15182 /* FlightSchedule.m */; };
+		8C0E843023434333009E989A /* airports.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8C0E842F23434332009E989A /* airports.sqlite */; };
+		8C14B59A233A5D270002FBFD /* DeptTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C14B598233A5D270002FBFD /* DeptTableViewCell.m */; };
+		8C14B59B233A5D270002FBFD /* DeptTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C14B599233A5D270002FBFD /* DeptTableViewCell.xib */; };
+		8C1D2DDF2343653700A7E45B /* SaveTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1D2DDE2343653700A7E45B /* SaveTableViewController.m */; };
+		8C1D2DE3234365E500A7E45B /* SaveTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1D2DE1234365E500A7E45B /* SaveTableViewCell.m */; };
+		8C1D2DE4234365E500A7E45B /* SaveTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C1D2DE2234365E500A7E45B /* SaveTableViewCell.xib */; };
+		8C1D2DE82343796A00A7E45B /* DeleteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C1D2DE72343796A00A7E45B /* DeleteViewController.m */; };
 		8C67308E2327B97D00751421 /* Persistence.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C67308D2327B97D00751421 /* Persistence.m */; };
 		8C6730912327BBFC00751421 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C6730902327BBFC00751421 /* CoreDataHelper.m */; };
-		8C67309523280AB900751421 /* airports.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 8C67309423280AB900751421 /* airports.sqlite */; };
+		8C70B87A2342978B0018C2C7 /* TAApiC.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = 8C70B8792342978B0018C2C7 /* TAApiC.xcdatamodel */; };
+		8C70B88423432A430018C2C7 /* AlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C70B88323432A430018C2C7 /* AlertViewController.m */; };
+		8C70B88F234332840018C2C7 /* Airports+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C70B889234332840018C2C7 /* Airports+CoreDataClass.m */; };
+		8C70B890234332840018C2C7 /* Airports+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C70B88A234332840018C2C7 /* Airports+CoreDataProperties.m */; };
+		8C70B891234332840018C2C7 /* FlightSchedule+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C70B88D234332840018C2C7 /* FlightSchedule+CoreDataClass.m */; };
+		8C70B892234332840018C2C7 /* FlightSchedule+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C70B88E234332840018C2C7 /* FlightSchedule+CoreDataProperties.m */; };
+		8C85D0882334FE4B00876972 /* SearchTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C85D0862334FE4B00876972 /* SearchTableViewCell.m */; };
+		8C85D0892334FE4B00876972 /* SearchTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8C85D0872334FE4B00876972 /* SearchTableViewCell.xib */; };
+		8C8D222B2340FCFA00BA549A /* NoFlightViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D222A2340FCFA00BA549A /* NoFlightViewController.m */; };
 		8C8D36E9231FC29700B30B63 /* MainViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D36E8231FC29700B30B63 /* MainViewModel.m */; };
 		8C8D36ED231FC2BD00B30B63 /* DetailViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D36EC231FC2BD00B30B63 /* DetailViewModel.m */; };
 		8C8D36F0231FC2EA00B30B63 /* SaveViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D36EF231FC2EA00B30B63 /* SaveViewModel.m */; };
 		8C8D36F3231FC38100B30B63 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D36F2231FC38100B30B63 /* DetailViewController.m */; };
-		8C8D36F6231FC39500B30B63 /* SaveViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8C8D36F5231FC39500B30B63 /* SaveViewController.m */; };
 		8CE9C5A92313DD5A0079FB2F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9C5A82313DD5A0079FB2F /* AppDelegate.m */; };
 		8CE9C5AC2313DD5A0079FB2F /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9C5AB2313DD5A0079FB2F /* MainViewController.m */; };
-		8CE9C5B22313DD5A0079FB2F /* TAApiC.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9C5B02313DD5A0079FB2F /* TAApiC.xcdatamodeld */; };
 		8CE9C5B42313DD5C0079FB2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C5B32313DD5C0079FB2F /* Assets.xcassets */; };
 		8CE9C5B72313DD5C0079FB2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8CE9C5B52313DD5C0079FB2F /* LaunchScreen.storyboard */; };
 		8CE9C5BA2313DD5C0079FB2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8CE9C5B92313DD5C0079FB2F /* main.m */; };
@@ -31,17 +41,37 @@
 /* Begin PBXFileReference section */
 		8C096780232136E900958A56 /* DeptTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeptTableViewController.h; sourceTree = "<group>"; };
 		8C096781232136E900958A56 /* DeptTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeptTableViewController.m; sourceTree = "<group>"; };
-		8C096783232136F600958A56 /* ArrivalTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ArrivalTableViewController.h; sourceTree = "<group>"; };
-		8C096784232136F600958A56 /* ArrivalTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArrivalTableViewController.m; sourceTree = "<group>"; };
-		8C43FCFB2317C98D00A46DBA /* Helper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Helper.h; sourceTree = "<group>"; };
-		8C43FCFC2317C98D00A46DBA /* Helper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Helper.m; sourceTree = "<group>"; };
-		8C5ACE06231E616A00F15182 /* FlightSchedule.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlightSchedule.h; sourceTree = "<group>"; };
-		8C5ACE07231E616A00F15182 /* FlightSchedule.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlightSchedule.m; sourceTree = "<group>"; };
+		8C0E842F23434332009E989A /* airports.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = airports.sqlite; sourceTree = "<group>"; };
+		8C14B597233A5D270002FBFD /* DeptTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeptTableViewCell.h; sourceTree = "<group>"; };
+		8C14B598233A5D270002FBFD /* DeptTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeptTableViewCell.m; sourceTree = "<group>"; };
+		8C14B599233A5D270002FBFD /* DeptTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeptTableViewCell.xib; sourceTree = "<group>"; };
+		8C1D2DDD2343653700A7E45B /* SaveTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveTableViewController.h; sourceTree = "<group>"; };
+		8C1D2DDE2343653700A7E45B /* SaveTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveTableViewController.m; sourceTree = "<group>"; };
+		8C1D2DE0234365E500A7E45B /* SaveTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveTableViewCell.h; sourceTree = "<group>"; };
+		8C1D2DE1234365E500A7E45B /* SaveTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveTableViewCell.m; sourceTree = "<group>"; };
+		8C1D2DE2234365E500A7E45B /* SaveTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SaveTableViewCell.xib; sourceTree = "<group>"; };
+		8C1D2DE62343796A00A7E45B /* DeleteViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeleteViewController.h; sourceTree = "<group>"; };
+		8C1D2DE72343796A00A7E45B /* DeleteViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeleteViewController.m; sourceTree = "<group>"; };
 		8C67308C2327B97D00751421 /* Persistence.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Persistence.h; sourceTree = "<group>"; };
 		8C67308D2327B97D00751421 /* Persistence.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Persistence.m; sourceTree = "<group>"; };
 		8C67308F2327BBFC00751421 /* CoreDataHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDataHelper.h; sourceTree = "<group>"; };
 		8C6730902327BBFC00751421 /* CoreDataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
-		8C67309423280AB900751421 /* airports.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = airports.sqlite; sourceTree = "<group>"; };
+		8C70B8792342978B0018C2C7 /* TAApiC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; name = TAApiC.xcdatamodel; path = TAApiC/Service/CoreData/TAApiC.xcdatamodeld/TAApiC.xcdatamodel; sourceTree = SOURCE_ROOT; };
+		8C70B88223432A430018C2C7 /* AlertViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AlertViewController.h; sourceTree = "<group>"; };
+		8C70B88323432A430018C2C7 /* AlertViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AlertViewController.m; sourceTree = "<group>"; };
+		8C70B887234332840018C2C7 /* Airports+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Airports+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8C70B888234332840018C2C7 /* Airports+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Airports+CoreDataClass.h"; sourceTree = "<group>"; };
+		8C70B889234332840018C2C7 /* Airports+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Airports+CoreDataClass.m"; sourceTree = "<group>"; };
+		8C70B88A234332840018C2C7 /* Airports+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Airports+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8C70B88B234332840018C2C7 /* FlightSchedule+CoreDataProperties.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlightSchedule+CoreDataProperties.h"; sourceTree = "<group>"; };
+		8C70B88C234332840018C2C7 /* FlightSchedule+CoreDataClass.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlightSchedule+CoreDataClass.h"; sourceTree = "<group>"; };
+		8C70B88D234332840018C2C7 /* FlightSchedule+CoreDataClass.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FlightSchedule+CoreDataClass.m"; sourceTree = "<group>"; };
+		8C70B88E234332840018C2C7 /* FlightSchedule+CoreDataProperties.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "FlightSchedule+CoreDataProperties.m"; sourceTree = "<group>"; };
+		8C85D0852334FE4B00876972 /* SearchTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchTableViewCell.h; sourceTree = "<group>"; };
+		8C85D0862334FE4B00876972 /* SearchTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchTableViewCell.m; sourceTree = "<group>"; };
+		8C85D0872334FE4B00876972 /* SearchTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableViewCell.xib; sourceTree = "<group>"; };
+		8C8D22292340FCFA00BA549A /* NoFlightViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NoFlightViewController.h; sourceTree = "<group>"; };
+		8C8D222A2340FCFA00BA549A /* NoFlightViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NoFlightViewController.m; sourceTree = "<group>"; };
 		8C8D36E7231FC29700B30B63 /* MainViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewModel.h; sourceTree = "<group>"; };
 		8C8D36E8231FC29700B30B63 /* MainViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewModel.m; sourceTree = "<group>"; };
 		8C8D36EB231FC2BD00B30B63 /* DetailViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewModel.h; sourceTree = "<group>"; };
@@ -50,14 +80,11 @@
 		8C8D36EF231FC2EA00B30B63 /* SaveViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveViewModel.m; sourceTree = "<group>"; };
 		8C8D36F1231FC38100B30B63 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		8C8D36F2231FC38100B30B63 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		8C8D36F4231FC39500B30B63 /* SaveViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SaveViewController.h; sourceTree = "<group>"; };
-		8C8D36F5231FC39500B30B63 /* SaveViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaveViewController.m; sourceTree = "<group>"; };
 		8CE9C5A42313DD5A0079FB2F /* TAApiC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TAApiC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8CE9C5A72313DD5A0079FB2F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		8CE9C5A82313DD5A0079FB2F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		8CE9C5AA2313DD5A0079FB2F /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		8CE9C5AB2313DD5A0079FB2F /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		8CE9C5B12313DD5A0079FB2F /* TAApiC.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TAApiC.xcdatamodel; sourceTree = "<group>"; };
 		8CE9C5B32313DD5C0079FB2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8CE9C5B62313DD5C0079FB2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8CE9C5B82313DD5C0079FB2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -82,17 +109,30 @@
 			children = (
 				8C096780232136E900958A56 /* DeptTableViewController.h */,
 				8C096781232136E900958A56 /* DeptTableViewController.m */,
+				8C14B597233A5D270002FBFD /* DeptTableViewCell.h */,
+				8C14B598233A5D270002FBFD /* DeptTableViewCell.m */,
+				8C14B599233A5D270002FBFD /* DeptTableViewCell.xib */,
+				8C09677F232136C000958A56 /* NoFlightViewController */,
 			);
 			path = DeptTableViewController;
 			sourceTree = "<group>";
 		};
-		8C09677F232136C000958A56 /* ArrivalTableViewController */ = {
+		8C09677F232136C000958A56 /* NoFlightViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8C096783232136F600958A56 /* ArrivalTableViewController.h */,
-				8C096784232136F600958A56 /* ArrivalTableViewController.m */,
+				8C8D22292340FCFA00BA549A /* NoFlightViewController.h */,
+				8C8D222A2340FCFA00BA549A /* NoFlightViewController.m */,
 			);
-			path = ArrivalTableViewController;
+			path = NoFlightViewController;
+			sourceTree = "<group>";
+		};
+		8C1D2DE52343794600A7E45B /* DeleteMessageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C1D2DE62343796A00A7E45B /* DeleteViewController.h */,
+				8C1D2DE72343796A00A7E45B /* DeleteViewController.m */,
+			);
+			path = DeleteMessageViewController;
 			sourceTree = "<group>";
 		};
 		8C5ACE00231E60BE00F15182 /* App */ = {
@@ -107,8 +147,14 @@
 		8C5ACE01231E60C600F15182 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				8C5ACE06231E616A00F15182 /* FlightSchedule.h */,
-				8C5ACE07231E616A00F15182 /* FlightSchedule.m */,
+				8C70B887234332840018C2C7 /* Airports+CoreDataProperties.h */,
+				8C70B888234332840018C2C7 /* Airports+CoreDataClass.h */,
+				8C70B889234332840018C2C7 /* Airports+CoreDataClass.m */,
+				8C70B88A234332840018C2C7 /* Airports+CoreDataProperties.m */,
+				8C70B88B234332840018C2C7 /* FlightSchedule+CoreDataProperties.h */,
+				8C70B88C234332840018C2C7 /* FlightSchedule+CoreDataClass.h */,
+				8C70B88D234332840018C2C7 /* FlightSchedule+CoreDataClass.m */,
+				8C70B88E234332840018C2C7 /* FlightSchedule+CoreDataProperties.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -117,6 +163,7 @@
 			isa = PBXGroup;
 			children = (
 				8C8D36E1231FC1AA00B30B63 /* MainVıew */,
+				8C09677E232136B100958A56 /* DeptTableViewController */,
 				8C8D36E2231FC1B200B30B63 /* DetailView */,
 				8C8D36E3231FC1C300B30B63 /* SaveView */,
 			);
@@ -129,8 +176,6 @@
 				8C8D36DF231FB5DB00B30B63 /* Supporting Files */,
 				8C5ACE05231E612C00F15182 /* CoreData */,
 				8C5ACE04231E610E00F15182 /* Network */,
-				8C43FCFB2317C98D00A46DBA /* Helper.h */,
-				8C43FCFC2317C98D00A46DBA /* Helper.m */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -147,8 +192,6 @@
 		8C5ACE05231E612C00F15182 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				8C67309423280AB900751421 /* airports.sqlite */,
-				8CE9C5B02313DD5A0079FB2F /* TAApiC.xcdatamodeld */,
 				8C67308C2327B97D00751421 /* Persistence.h */,
 				8C67308D2327B97D00751421 /* Persistence.m */,
 				8C67308F2327BBFC00751421 /* CoreDataHelper.h */,
@@ -157,9 +200,20 @@
 			path = CoreData;
 			sourceTree = "<group>";
 		};
+		8C70B88123432A1E0018C2C7 /* AlertViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8C70B88223432A430018C2C7 /* AlertViewController.h */,
+				8C70B88323432A430018C2C7 /* AlertViewController.m */,
+			);
+			path = AlertViewController;
+			sourceTree = "<group>";
+		};
 		8C8D36DF231FB5DB00B30B63 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				8C0E842F23434332009E989A /* airports.sqlite */,
+				8C70B8792342978B0018C2C7 /* TAApiC.xcdatamodel */,
 				8CE9C5B32313DD5C0079FB2F /* Assets.xcassets */,
 				8CE9C5B52313DD5C0079FB2F /* LaunchScreen.storyboard */,
 				8CE9C5B82313DD5C0079FB2F /* Info.plist */,
@@ -183,8 +237,9 @@
 			children = (
 				8CE9C5AA2313DD5A0079FB2F /* MainViewController.h */,
 				8CE9C5AB2313DD5A0079FB2F /* MainViewController.m */,
-				8C09677E232136B100958A56 /* DeptTableViewController */,
-				8C09677F232136C000958A56 /* ArrivalTableViewController */,
+				8C85D0852334FE4B00876972 /* SearchTableViewCell.h */,
+				8C85D0862334FE4B00876972 /* SearchTableViewCell.m */,
+				8C85D0872334FE4B00876972 /* SearchTableViewCell.xib */,
 			);
 			path = "MainVıew";
 			sourceTree = "<group>";
@@ -194,6 +249,7 @@
 			children = (
 				8C8D36F1231FC38100B30B63 /* DetailViewController.h */,
 				8C8D36F2231FC38100B30B63 /* DetailViewController.m */,
+				8C70B88123432A1E0018C2C7 /* AlertViewController */,
 			);
 			path = DetailView;
 			sourceTree = "<group>";
@@ -201,8 +257,12 @@
 		8C8D36E3231FC1C300B30B63 /* SaveView */ = {
 			isa = PBXGroup;
 			children = (
-				8C8D36F4231FC39500B30B63 /* SaveViewController.h */,
-				8C8D36F5231FC39500B30B63 /* SaveViewController.m */,
+				8C1D2DDD2343653700A7E45B /* SaveTableViewController.h */,
+				8C1D2DDE2343653700A7E45B /* SaveTableViewController.m */,
+				8C1D2DE0234365E500A7E45B /* SaveTableViewCell.h */,
+				8C1D2DE1234365E500A7E45B /* SaveTableViewCell.m */,
+				8C1D2DE2234365E500A7E45B /* SaveTableViewCell.xib */,
+				8C1D2DE52343794600A7E45B /* DeleteMessageViewController */,
 			);
 			path = SaveView;
 			sourceTree = "<group>";
@@ -320,8 +380,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8CE9C5B72313DD5C0079FB2F /* LaunchScreen.storyboard in Resources */,
-				8C67309523280AB900751421 /* airports.sqlite in Resources */,
+				8C85D0892334FE4B00876972 /* SearchTableViewCell.xib in Resources */,
 				8CE9C5B42313DD5C0079FB2F /* Assets.xcassets in Resources */,
+				8C0E843023434333009E989A /* airports.sqlite in Resources */,
+				8C1D2DE4234365E500A7E45B /* SaveTableViewCell.xib in Resources */,
+				8C14B59B233A5D270002FBFD /* DeptTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,22 +395,29 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE9C5B22313DD5A0079FB2F /* TAApiC.xcdatamodeld in Sources */,
+				8C70B891234332840018C2C7 /* FlightSchedule+CoreDataClass.m in Sources */,
 				8C8D36ED231FC2BD00B30B63 /* DetailViewModel.m in Sources */,
-				8C43FCFD2317C98D00A46DBA /* Helper.m in Sources */,
-				8C096785232136F600958A56 /* ArrivalTableViewController.m in Sources */,
+				8C70B88F234332840018C2C7 /* Airports+CoreDataClass.m in Sources */,
+				8C1D2DE82343796A00A7E45B /* DeleteViewController.m in Sources */,
+				8C85D0882334FE4B00876972 /* SearchTableViewCell.m in Sources */,
+				8C70B88423432A430018C2C7 /* AlertViewController.m in Sources */,
 				8C8D36F0231FC2EA00B30B63 /* SaveViewModel.m in Sources */,
 				8C67308E2327B97D00751421 /* Persistence.m in Sources */,
+				8C70B87A2342978B0018C2C7 /* TAApiC.xcdatamodel in Sources */,
+				8C1D2DE3234365E500A7E45B /* SaveTableViewCell.m in Sources */,
 				8CE9C5AC2313DD5A0079FB2F /* MainViewController.m in Sources */,
-				8C8D36F6231FC39500B30B63 /* SaveViewController.m in Sources */,
+				8C8D222B2340FCFA00BA549A /* NoFlightViewController.m in Sources */,
+				8C14B59A233A5D270002FBFD /* DeptTableViewCell.m in Sources */,
+				8C70B890234332840018C2C7 /* Airports+CoreDataProperties.m in Sources */,
 				8C8D36E9231FC29700B30B63 /* MainViewModel.m in Sources */,
 				8C096782232136E900958A56 /* DeptTableViewController.m in Sources */,
 				8CE9C5BA2313DD5C0079FB2F /* main.m in Sources */,
 				8C8D36F3231FC38100B30B63 /* DetailViewController.m in Sources */,
 				8CE9C5A92313DD5A0079FB2F /* AppDelegate.m in Sources */,
+				8C70B892234332840018C2C7 /* FlightSchedule+CoreDataProperties.m in Sources */,
 				8CE9C5C22313EFDF0079FB2F /* NetworkManagement.m in Sources */,
+				8C1D2DDF2343653700A7E45B /* SaveTableViewController.m in Sources */,
 				8C6730912327BBFC00751421 /* CoreDataHelper.m in Sources */,
-				8C5ACE08231E616A00F15182 /* FlightSchedule.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -533,19 +603,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		8CE9C5B02313DD5A0079FB2F /* TAApiC.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				8CE9C5B12313DD5A0079FB2F /* TAApiC.xcdatamodel */,
-			);
-			currentVersion = 8CE9C5B12313DD5A0079FB2F /* TAApiC.xcdatamodel */;
-			path = TAApiC.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 8CE9C59C2313DD5A0079FB2F /* Project object */;
 }

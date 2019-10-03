@@ -1,11 +1,3 @@
-//
-//  DeleteViewController.m
-//  TAApiC
-//
-//  Created by Burak Özcan on 1.10.2019.
-//  Copyright © 2019 Burak Özcan. All rights reserved.
-//
-
 #import "DeleteViewController.h"
 
 @interface DeleteViewController ()
@@ -14,19 +6,27 @@
 
 @implementation DeleteViewController
 
+-(id) initWithAlertTitle:(NSString *) title message:(NSString *) message {
+  self = [super init];
+  _alertTitle = title;
+  _alertMessage = message;
+  return self;
+}
+
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+  [super viewDidLoad];
+  self.view.backgroundColor = UIColor.whiteColor;
+  [self showAlert:_alertTitle message:_alertMessage];
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void) showAlert:(NSString *) title message:(NSString *) message {
+  UIAlertController *alert = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleActionSheet];
+  UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+    UINavigationController *navVC = (UINavigationController *)UIApplication.sharedApplication.keyWindow.rootViewController;
+    [navVC popToRootViewControllerAnimated:YES];
+  }];
+  [alert addAction:action];
+  [UIApplication.sharedApplication.keyWindow.rootViewController presentViewController:alert animated:YES completion:nil];
 }
-*/
 
 @end
