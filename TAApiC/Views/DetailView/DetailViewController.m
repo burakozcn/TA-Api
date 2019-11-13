@@ -39,6 +39,9 @@
   UILayoutGuide *guide = self.view.safeAreaLayoutGuide;
   UILayoutGuide *readGuide = self.view.readableContentGuide;
   
+  CGFloat width = [[UIScreen mainScreen] bounds].size.width;
+  CGFloat height = [[UIScreen mainScreen] bounds].size.height;
+  
   [self departDestLabelSetup];
   [self departDestFieldSetup];
   [self departTimeLabelSetup];
@@ -69,72 +72,72 @@
   [self.view addSubview:_flightNumberLabel];
   [self.view addSubview:_flightNumberField];
   
-  [_departDestLabel.topAnchor constraintEqualToAnchor:guide.topAnchor constant:18].active = true;
+  [_departDestLabel.topAnchor constraintEqualToAnchor:guide.topAnchor constant:height * 0.015].active = true;
   [_departDestLabel.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_departDestLabel.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_departDestLabel.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.04].active = true;
   
-  [_departDestField.topAnchor constraintEqualToAnchor:_departDestLabel.bottomAnchor constant:12].active = true;
+  [_departDestField.topAnchor constraintEqualToAnchor:_departDestLabel.bottomAnchor constant:height * 0.01].active = true;
   [_departDestField.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_departDestField.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_departDestField.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.06].active = true;
   
-  [_departTimeLabel.topAnchor constraintEqualToAnchor:_departDestField.bottomAnchor constant:12].active = true;
+  [_departTimeLabel.topAnchor constraintEqualToAnchor:_departDestField.bottomAnchor constant:height * 0.01].active = true;
   [_departTimeLabel.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_departTimeLabel.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_departTimeLabel.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.04].active = true;
   
-  [_departTimeField.topAnchor constraintEqualToAnchor:_departTimeLabel.bottomAnchor constant:12].active = true;
+  [_departTimeField.topAnchor constraintEqualToAnchor:_departTimeLabel.bottomAnchor constant:height * 0.01].active = true;
   [_departTimeField.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_departTimeField.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_departTimeField.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.06].active = true;
   
-  [_arrivalDestLabel.topAnchor constraintEqualToAnchor:_departTimeField.bottomAnchor constant:12].active = true;
+  [_arrivalDestLabel.topAnchor constraintEqualToAnchor:_departTimeField.bottomAnchor constant:height * 0.01].active = true;
   [_arrivalDestLabel.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_arrivalDestLabel.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_arrivalDestLabel.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.04].active = true;
   
-  [_arrivalDestField.topAnchor constraintEqualToAnchor:_arrivalDestLabel.bottomAnchor constant:12].active = true;
+  [_arrivalDestField.topAnchor constraintEqualToAnchor:_arrivalDestLabel.bottomAnchor constant:height * 0.01].active = true;
   [_arrivalDestField.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_arrivalDestField.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_arrivalDestField.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.06].active = true;
   
-  [_arrivalTimeLabel.topAnchor constraintEqualToAnchor:_arrivalDestField.bottomAnchor constant:12].active = true;
+  [_arrivalTimeLabel.topAnchor constraintEqualToAnchor:_arrivalDestField.bottomAnchor constant:height * 0.01].active = true;
   [_arrivalTimeLabel.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_arrivalTimeLabel.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_arrivalTimeLabel.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.04].active = true;
   
-  [_arrivalTimeField.topAnchor constraintEqualToAnchor:_arrivalTimeLabel.bottomAnchor constant:12].active = true;
+  [_arrivalTimeField.topAnchor constraintEqualToAnchor:_arrivalTimeLabel.bottomAnchor constant:height * 0.01].active = true;
   [_arrivalTimeField.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_arrivalTimeField.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_arrivalTimeField.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.06].active = true;
   
-  [_durationLabel.topAnchor constraintEqualToAnchor:_arrivalTimeField.bottomAnchor constant:12].active = true;
+  [_durationLabel.topAnchor constraintEqualToAnchor:_arrivalTimeField.bottomAnchor constant:height * 0.01].active = true;
   [_durationLabel.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_durationLabel.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_durationLabel.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.04].active = true;
   
-  [_durationField.topAnchor constraintEqualToAnchor:_durationLabel.bottomAnchor constant:12].active = true;
+  [_durationField.topAnchor constraintEqualToAnchor:_durationLabel.bottomAnchor constant:height * 0.01].active = true;
   [_durationField.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_durationField.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_durationField.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.06].active = true;
   
-  [_airlineLabel.topAnchor constraintEqualToAnchor:_durationField.bottomAnchor constant:12].active = true;
+  [_airlineLabel.topAnchor constraintEqualToAnchor:_durationField.bottomAnchor constant:height * 0.01].active = true;
   [_airlineLabel.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_airlineLabel.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_airlineLabel.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.04].active = true;
   
-  [_airlineField.topAnchor constraintEqualToAnchor:_airlineLabel.bottomAnchor constant:12].active = true;
+  [_airlineField.topAnchor constraintEqualToAnchor:_airlineLabel.bottomAnchor constant:height * 0.01].active = true;
   [_airlineField.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_airlineField.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_airlineField.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.06].active = true;
   
-  [_flightNumberLabel.topAnchor constraintEqualToAnchor:_airlineField.bottomAnchor constant:12].active = true;
+  [_flightNumberLabel.topAnchor constraintEqualToAnchor:_airlineField.bottomAnchor constant:height * 0.01].active = true;
   [_flightNumberLabel.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_flightNumberLabel.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_flightNumberLabel.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.04].active = true;
   
-  [_flightNumberField.topAnchor constraintEqualToAnchor:_flightNumberLabel.bottomAnchor constant:12].active = true;
+  [_flightNumberField.topAnchor constraintEqualToAnchor:_flightNumberLabel.bottomAnchor constant:height * 0.01].active = true;
   [_flightNumberField.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
   [_flightNumberField.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
   [_flightNumberField.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.06].active = true;
@@ -143,10 +146,10 @@
     [self saveButtonSetup];
     [self.view addSubview:_saveButton];
     
-    [_saveButton.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:12].active = true;
+    [_saveButton.leadingAnchor constraintEqualToAnchor:readGuide.leadingAnchor constant:height * 0.01].active = true;
     [_saveButton.trailingAnchor constraintEqualToAnchor:readGuide.trailingAnchor constant:-12].active = true;
     [_saveButton.heightAnchor constraintEqualToAnchor:guide.heightAnchor multiplier:0.05].active = true;
-    [_saveButton.bottomAnchor constraintEqualToAnchor:guide.bottomAnchor constant:-12].active = true;
+    [_saveButton.bottomAnchor constraintEqualToAnchor:guide.bottomAnchor constant:-height * 0.01].active = true;
   }
 }
 
